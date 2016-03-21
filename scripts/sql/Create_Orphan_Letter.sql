@@ -1,0 +1,9 @@
+CREATE TABLE Medhok.Orphan_Letter
+(
+	ID INT IDENTITY(1,1) NOT NULL
+		CONSTRAINT idx__orphan_letter__id
+			PRIMARY KEY CLUSTERED (ID),
+	ExecutionLogId INT NOT NULL,
+	LetterName VARCHAR(133) NOT NULL,
+	CreatedAt DATETIME2 NOT NULL DEFAULT(SYSDATETIME())
+);
