@@ -11,16 +11,18 @@ GO
 --				register new name of files copies.
 -- =============================================
 CREATE PROCEDURE Medhok.LoadNewFileCopies
-	@New_File_copy AS Good_File_Copy READONLY
+	@New_File_copy AS Good_File_Copy READONLY,
+	@destination AS VARCHAR(1024)
 AS
 BEGIN
 	SET NOCOUNT ON;
 
 	INSERT INTO Medhok.Letter_Copy (
 									LetterID,
-									LetterName
+									LetterName,
+									MovedTo
 							       )
-	SELECT l.LetterID, c.NewFileName
+	SELECT l.LetterID, c.NewFileName, @destination
 	FROM Medhok.Letter AS l INNER JOIN @New_File_copy AS c
 		ON l.LetterName = c.PreviousFileName;
 
