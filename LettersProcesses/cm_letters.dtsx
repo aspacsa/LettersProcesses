@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="cm_letters"
   DTS:PackageType="5"
-  DTS:VersionBuild="337"
-  DTS:VersionGUID="{619F3FAD-8CE7-43BB-9322-9555ACCAE624}">
+  DTS:VersionBuild="339"
+  DTS:VersionGUID="{5D223029-82CF-46A4-B8DB-7AF5C92BEB41}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -113,7 +113,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv9uyUNI+10O4C+bRNDWJswAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABENDL4dI/6PyM4Q25mr6vcSKxLK0JMJnYFxgObPR4dFQAAAAAOgAAAAAIAACAAAADLgn6FXMz/joqa+CK/bH5xMbrx43z03yUy9smFRTMcuxAAAABbwWDPlw8r+IAmBXcknjCKQAAAALlfR6QjrwkfXlQLl7x+ICDb4Tr15duxGNO3FJ7iXMxrmr2dqCNtswwLTGldvM3ILPihzvycLZukTKzfAGC6AKc</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv9uyUNI+10O4C+bRNDWJswAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACLlsJcDyAnov3Uq+57PJYWTZgYqXvbHfBfdeuFEgIbEgAAAAAOgAAAAAIAACAAAAArKkFTi3quZc5aj1DKlWr5DVEULpIZ1a0fcVHy1KlUsxAAAAB2CaO+kysuo5ygDTK/DKxbQAAAAKQb298qy/ShvS3K3ngHjQPtfDNNPWWiXpvbJSRdUGySGEiRbMrs6n1WknAnftacuETaLdfgn6YW4Vp3NyU0S24</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -213,7 +213,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="execution_log_id">
       <DTS:VariableValue
-        DTS:DataType="3">406</DTS:VariableValue>
+        DTS:DataType="3">407</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -366,35 +366,14 @@
               Language="CSharp"
               ReadWriteVariables="User::file_directory,User::file_name">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ce7fe869b46b4d409fe18d60eb1f84b4")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ce7fe869b46b4d409fe18d60eb1f84b4")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -770,14 +749,35 @@ namespace ST_ce7fe869b46b4d409fe18d60eb1f84b4.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ce7fe869b46b4d409fe18d60eb1f84b4")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ce7fe869b46b4d409fe18d60eb1f84b4")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1684,35 +1684,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               ReadOnlyVariables="User::file_name,User::wrong_file_name"
               ReadWriteVariables="User::current_batch_error,User::current_batch_name,User::current_batch_date,User::current_batch_id,User::current_batch_type,User::current_manifest_file">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1ac200bd5c184357bcb37ec3e944b56a")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1ac200bd5c184357bcb37ec3e944b56a")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -2097,14 +2076,35 @@ namespace ST_1ac200bd5c184357bcb37ec3e944b56a.Properties {
     }
 }]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1ac200bd5c184357bcb37ec3e944b56a")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1ac200bd5c184357bcb37ec3e944b56a")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -2322,6 +2322,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
               ReadOnlyVariables="User::current_manifest_file,User::rows_in_manifest"
               ReadWriteVariables="User::current_batch_error,User::empty_manifest_found">
               <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_52913474efcf4eb784a60ff889a15ea2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_52913474efcf4eb784a60ff889a15ea2")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -2440,35 +2470,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_52913474efcf4eb784a60ff889a15ea2.Properties.Settings.get_Default():ST_52913474efcf4eb784a60ff889a15ea2.Properties.Sett" +
-    "ings")]
-
-namespace ST_52913474efcf4eb784a60ff889a15ea2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -2700,35 +2701,34 @@ namespace ST_52913474efcf4eb784a60ff889a15ea2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_52913474efcf4eb784a60ff889a15ea2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_52913474efcf4eb784a60ff889a15ea2")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_52913474efcf4eb784a60ff889a15ea2.Properties.Settings.get_Default():ST_52913474efcf4eb784a60ff889a15ea2.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_52913474efcf4eb784a60ff889a15ea2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -2946,6 +2946,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               ReadOnlyVariables="User::file_name,User::manifest_pattern"
               ReadWriteVariables="User::current_batch_error,User::current_batch_name,User::current_batch_date,User::current_batch_id,User::current_batch_type,User::current_manifest_file,User::wrong_file_name">
               <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_0c60874e1ba6402b850c9769b80d1072")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_0c60874e1ba6402b850c9769b80d1072")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -3064,35 +3094,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_0c60874e1ba6402b850c9769b80d1072.Properties.Settings.get_Default():ST_0c60874e1ba6402b850c9769b80d1072.Properties.Sett" +
-    "ings")]
-
-namespace ST_0c60874e1ba6402b850c9769b80d1072.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -3373,35 +3374,34 @@ namespace ST_0c60874e1ba6402b850c9769b80d1072
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_0c60874e1ba6402b850c9769b80d1072")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_0c60874e1ba6402b850c9769b80d1072")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_0c60874e1ba6402b850c9769b80d1072.Properties.Settings.get_Default():ST_0c60874e1ba6402b850c9769b80d1072.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_0c60874e1ba6402b850c9769b80d1072.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -3637,6 +3637,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               Language="CSharp"
               ReadOnlyVariables="User::empty_manifest_found">
               <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_c57f30735dc746d8bc8c0a5205221c01")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_c57f30735dc746d8bc8c0a5205221c01")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="ST_c57f30735dc746d8bc8c0a5205221c01.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -3841,35 +3871,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
   </resheader>
 </root>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c57f30735dc746d8bc8c0a5205221c01.Properties.Settings.get_Default():ST_c57f30735dc746d8bc8c0a5205221c01.Properties.Sett" +
-    "ings")]
-
-namespace ST_c57f30735dc746d8bc8c0a5205221c01.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -4012,35 +4013,34 @@ namespace ST_c57f30735dc746d8bc8c0a5205221c01
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_c57f30735dc746d8bc8c0a5205221c01")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_c57f30735dc746d8bc8c0a5205221c01")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_c57f30735dc746d8bc8c0a5205221c01.Properties.Settings.get_Default():ST_c57f30735dc746d8bc8c0a5205221c01.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_c57f30735dc746d8bc8c0a5205221c01.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -5029,15 +5029,15 @@ namespace ST_2e47d0689ce340d890f9a8ec0cfd6650
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_2e47d0689ce340d890f9a8ec0cfd6650</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_2e47d0689ce340d890f9a8ec0cfd6650</msb:DisplayName>
 		<msb:ProjectId>{CE81C66F-F741-4BAF-9C84-9F62A6B161BA}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_2e47d0689ce340d890f9a8ec0cfd6650.csproj"/>
-		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
@@ -5174,7 +5174,7 @@ namespace ST_2e47d0689ce340d890f9a8ec0cfd6650.Properties {
               <BinaryItem
                 Name="ST_2e47d0689ce340d890f9a8ec0cfd6650.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAB/S6VYAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAbjMA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFm18VYAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAAbjMA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
 ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAABQzAABXAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -5216,7 +5216,7 @@ GwABARkGqQAhAToG0AAJAUcG1gABAU4GGwApAVoG3gAUAGYG4wAMAGYG6wDxAGoG8QDhAHQGZQBB
 AZkGGQEhAZ8GHAFJAbwBGwBJAcIGJAEZALwBGwAIABQAVgAIABgAWwApAJsAiAAuACMArAEuACsA
 rAEuAGsA0gEuABMAOwEuABsAgwEuADsAgwEuADMArAEuAEMAsgEuAEsArAEuAGMAyQFDAHMAWwBJ
 AJsAiABhAKMAWwCDALMAWwB9APYAKwECAAEAAwADAAAAbwEvAAAA7gE0AAAAEgJCAAIAAgADAAIA
-AwAFAAEABAAFAAIABQAHALgAvwAEgAAAAQAAAB8X73sAAAAAAAB/AAAABAAAAAAAAAAAAAAAAQCx
+AwAFAAEABAAFAAIABQAHALgAvwAEgAAAAQAAACUXDHkAAAAAAAB/AAAABAAAAAAAAAAAAAAAAQCx
 AAAAAAAEAAAAAAAAAAAAAAABALoAAAAAAAsAAAAAAAAAAAAAAAoA9QAAAAAACwAAAAAAAAAAAAAA
 CgAqBQAAAAABAAAAAAAAAAAAAADHACIGAAAAAAAAAAABAAAAyQYAAAUABAAAAAA8TW9kdWxlPgBT
 VF8yZTQ3ZDA2ODljZTM0MGQ4OTBmOWE4ZWMwY2ZkNjY1MC5kbGwAUmVzb3VyY2VzAFNUXzJlNDdk
@@ -5257,7 +5257,7 @@ AGEAdABpAG8AbgBfAGQAaQByAGUAYwB0AG8AcgB5AABdXgAoAEkAQwBQAHwAaQBjAHAAKQBfAFwA
 ZAB7ADUALAB9AF8AXABkAHsAOQB9AF8AXABkAHsANgAsAH0AXwBcAGQAewA4AH0ALgAoAFAARABG
 AHwAcABkAGYAKQAAJ1UAcwBlAHIAOgA6AGIAYQBkAF8AaQBjAHAAXwBmAGkAbABlAHMAAClVAHMA
 ZQByADoAOgBnAG8AbwBkAF8AaQBjAHAAXwBmAGkAbABlAHMAAANcAAALXwBJAEMAUABfAAAlXwBU
-AGUAbABlAE0AZQBkAGkAawBfADIAMQAwAC4AcABkAGYAAABlGSiynpUbQYKWPW/qV1AKAAi3elxW
+AGUAbABlAE0AZQBkAGkAawBfADIAMQAwAC4AcABkAGYAAABZVbMZBVVsR65eHbH9MfVGAAi3elxW
 GTTgiQiJhF3NgIDMkQMGEhUDBhIZAyAAAQQAABIVBAAAEhkFAAEBEhkECAASFQQIABIZAwYSDAQA
 ABIMBAgAEgwHIAMODg4QAgIGCAMGERQEAAAAAAQBAAAABCABAQ4EIAEBCAYAARJVEVkEIAASXQYg
 AgEOEl0EBwESFQUgAQERZQgBAAIAAAAAAAMAAAEEIAAScQQgABJ1BSABEnkcAyAAHAMgAA4DIAAC
@@ -5273,13 +5273,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFhAAACwAwAAAAAAAAAAAACwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEA73sfFwAAAQDvex8XPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEADHklFwAAAQAMeSUXPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEEAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAA7AIAAAEAMAAwADAA
 MAAwADQAYgAwAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABf
 ADIAZQA0ADcAZAAwADYAOAA5AGMAZQAzADQAMABkADgAOQAwAGYAOQBhADgAZQBjADAAYwBmAGQA
-NgA2ADUAMAAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA1ADkAMQA5
-AC4AMwAxADcAMgA3AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADIA
+NgA2ADUAMAAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA1ADkAMgA1
+AC4AMwAwADkAOAA4AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADIA
 ZQA0ADcAZAAwADYAOAA5AGMAZQAzADQAMABkADgAOQAwAGYAOQBhADgAZQBjADAAYwBmAGQANgA2
 ADUAMAAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
 eQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA2AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBs
@@ -5287,8 +5287,8 @@ AGUAbgBhAG0AZQAAAFMAVABfADIAZQA0ADcAZAAwADYAOAA5AGMAZQAzADQAMABkADgAOQAwAGYA
 OQBhADgAZQBjADAAYwBmAGQANgA2ADUAMAAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABO
 AGEAbQBlAAAAAABTAFQAXwAyAGUANAA3AGQAMAA2ADgAOQBjAGUAMwA0ADAAZAA4ADkAMABmADkA
 YQA4AGUAYwAwAGMAZgBkADYANgA1ADAAAABEAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBv
-AG4AAAAxAC4AMAAuADUAOQAxADkALgAzADEANwAyADcAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
-eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADUAOQAxADkALgAzADEANwAyADcAAAAAAAAAAAAA
+AG4AAAAxAC4AMAAuADUAOQAyADUALgAzADAAOQA4ADgAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
+eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADUAOQAyADUALgAzADAAOQA4ADgAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -5327,36 +5327,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               VSTAMinorVersion="0"
               Language="CSharp"
               ReadOnlyVariables="User::bad_icp_files">
-              <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_768cb2ebc66249f69ffbead645905a93")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_768cb2ebc66249f69ffbead645905a93")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -5476,6 +5446,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_768cb2ebc66249f69ffbead645905a93.Properties.Settings.get_Default():ST_768cb2ebc66249f69ffbead645905a93.Properties.Sett" +
+    "ings")]
+
+namespace ST_768cb2ebc66249f69ffbead645905a93.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -5606,7 +5605,7 @@ namespace ST_768cb2ebc66249f69ffbead645905a93
 
         private bool ExecuteStoredProcedure(DataTable table)
         {
-            string conn_string = "Data Source=MSSQLSERVER; Initial Catalog=testdb; User ID=sa; Password=sa";
+            string conn_string = "Data Source=MSSQLSERVER; Initial Catalog=testdb; User ID=sa; Password=sa; Connection Timeout=60";
             SqlConnection connection = new SqlConnection(conn_string);
             bool result = true;
 
@@ -5734,15 +5733,15 @@ namespace ST_768cb2ebc66249f69ffbead645905a93
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:Language>msBuild</msb:Language>
 		<msb:CodeName>ST_768cb2ebc66249f69ffbead645905a93</msb:CodeName>
+		<msb:Language>msBuild</msb:Language>
 		<msb:DisplayName>ST_768cb2ebc66249f69ffbead645905a93</msb:DisplayName>
 		<msb:ProjectId>{2BB1AED2-6962-4414-BFD4-9022F7678E32}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_768cb2ebc66249f69ffbead645905a93.csproj"/>
-		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Settings.settings"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
@@ -5750,34 +5749,35 @@ namespace ST_768cb2ebc66249f69ffbead645905a93
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_768cb2ebc66249f69ffbead645905a93")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_768cb2ebc66249f69ffbead645905a93")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_768cb2ebc66249f69ffbead645905a93.Properties.Settings.get_Default():ST_768cb2ebc66249f69ffbead645905a93.Properties.Sett" +
-    "ings")]
-
-namespace ST_768cb2ebc66249f69ffbead645905a93.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -5858,14 +5858,14 @@ namespace ST_768cb2ebc66249f69ffbead645905a93.Properties {
               <BinaryItem
                 Name="ST_768cb2ebc66249f69ffbead645905a93.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDANQJ8FYAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAArjMA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAJHm8lYAAAAAAAAAAOAAAiELAQsAABQAAAAIAAAAAAAA3jMA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAFwzAABPAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAIgzAABTAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAtBMAAAAgAAAAFAAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAA5BMAAAAgAAAAFAAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAACQ
-MwAAAAAAAEgAAAACAAUA6CIAAHQQAAABAAAAAAAAADAiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADA
+MwAAAAAAAEgAAAACAAUA6CIAAKAQAAABAAAAAAAAADAiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKA4AAAoqEzACAC0AAAABAAARfgEAAAQtIHIBAABw0AIA
 AAIoDwAACm8QAAAKcxEAAAoKBoABAAAEfgEAAAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAEKi5zBgAA
 BoADAAAEKh4CKBQAAAoqABswBACkAAAAAgAAEQIoFgAACm8XAAAKcnMAAHBvGAAACm8ZAAAKdAEA
@@ -5873,13 +5873,13 @@ ABsKBm8aAAAKLQ0CKBYAAAoWbxsAAAoqAigJAAAGCwZvHAAACg0rIxIDKB0AAAoMB28eAAAKF40B
 AAABEwQRBBYIohEEbx8AAAomEgMoIAAACi3U3g4SA/4WAgAAG28hAAAK3AIHKAoAAAYsDQIoFgAA
 ChZvGwAACioCKBYAAAoXbxsAAAoqARAAAAIAQwAwcwAOAAAAABMwAwAjAAAAAwAAEXMiAAAKCgZv
 IwAACnKbAABw0CUAAAEoDwAACm8kAAAKJgYqABswAwBaAAAABAAAEXKlAABwCgZzJQAACgsXDAdv
-JgAACnI4AQBwB3MnAAAKDQkabygAAAoJbykAAApyaAEAcANvKgAAChMEEQQfHm8rAAAKCW8sAAAK
+JgAACnJmAQBwB3MnAAAKDQkabygAAAoJbykAAApylgEAcANvKgAAChMEEQQfHm8rAAAKCW8sAAAK
 JgdvLQAACt4FJhYM3gAIKgAAARAAAAAADwBEUwAFLwAAAR4CKC4AAAoqAAAAALQAAADOyu++AQAA
 AJEAAABsU3lzdGVtLlJlc291cmNlcy5SZXNvdXJjZVJlYWRlciwgbXNjb3JsaWIsIFZlcnNpb249
 NC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5
 I1N5c3RlbS5SZXNvdXJjZXMuUnVudGltZVJlc291cmNlU2V0AgAAAAAAAAAAAAAAUEFEUEFEULQA
 AABCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAADYBAAAI34AAEQFAACcBwAAI1N0
-cmluZ3MAAAAA4AwAAJQBAAAjVVMAdA4AABAAAAAjR1VJRAAAAIQOAADwAQAAI0Jsb2IAAAAAAAAA
+cmluZ3MAAAAA4AwAAMABAAAjVVMAoA4AABAAAAAjR1VJRAAAALAOAADwAQAAI0Jsb2IAAAAAAAAA
 AgAAAVcdogkJAwAAAPolMwAWAAABAAAALwAAAAUAAAAGAAAACwAAAAIAAAAuAAAAAgAAAA8AAAAE
 AAAAAgAAAAMAAAAEAAAAAgAAAAEAAAAFAAAAAQAAAAEAAAAAAAoAAQAAAAAABgDBALoACgDdAMgA
 DgA9ARQBBgBZAboABgBvAV4BBgCgAYsBEgArAh8CBgCWAnwCBgDBAq8CBgDYAq8CBgD1Aq8CBgAU
@@ -5899,7 +5899,7 @@ ALwBGwA5AEkG8QAhARMG9wA5AbwBYwBBAasGGwBJAbwBBQFRAdEGDQFJAfgGFAFhARQHGgFpASsH
 IgFRATkHsgBBAUkHGwAZALwBGwAIABQAWQAIABgAXgApAJMAiwAuABsAqAEuACMAqAEuAGMAzgEu
 AAsANwEuABMAfwEuADMAfwEuACsAqAEuADsArgEuAEMAqAEuAFsAxQFDAGsAXgBJAJMAiwBhAJsA
 XgCDAKsAXgCAAN4AAAEpAQIAAQADAAMAAABvAS8AAADuATQAAAASAkIAAgACAAMAAgADAAUAAQAE
-AAUAAgAFAAcArADAAASAAAABAAAAJBcKTAAAAAAAAH8AAAAEAAAAAAAAAAAAAAABALEAAAAAAAQA
+AAUAAgAFAAcArADAAASAAAABAAAAJhfoaAAAAAAAAH8AAAAEAAAAAAAAAAAAAAABALEAAAAAAAQA
 AAAAAAAAAAAAAAEAugAAAAAACwAAAAAAAAAAAAAACgD1AAAAAAAEAAAAAAAAAAAAAAABAB8CAAAA
 AAsAAAAAAAAAAAAAAAoAHQUAAAAAAAAAAAEAAABZBwAABQAEAAAAADxNb2R1bGU+AFNUXzc2OGNi
 MmViYzY2MjQ5ZjY5ZmZiZWFkNjQ1OTA1YTkzLmRsbABSZXNvdXJjZXMAU1RfNzY4Y2IyZWJjNjYy
@@ -5938,32 +5938,32 @@ RGJUeXBlAEV4ZWN1dGVOb25RdWVyeQBDbG9zZQBFeGNlcHRpb24AU1RfNzY4Y2IyZWJjNjYyNDlm
 NjlmZmJlYWQ2NDU5MDVhOTMuUHJvcGVydGllcy5SZXNvdXJjZXMucmVzb3VyY2VzAABxUwBUAF8A
 NwA2ADgAYwBiADIAZQBiAGMANgA2ADIANAA5AGYANgA5AGYAZgBiAGUAYQBkADYANAA1ADkAMAA1
 AGEAOQAzAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAAAnVQBzAGUA
-cgA6ADoAYgBhAGQAXwBpAGMAcABfAGYAaQBsAGUAcwAACU4AYQBtAGUAAICRRABhAHQAYQAgAFMA
+cgA6ADoAYgBhAGQAXwBpAGMAcABfAGYAaQBsAGUAcwAACU4AYQBtAGUAAIC/RABhAHQAYQAgAFMA
 bwB1AHIAYwBlAD0ATQBTAFMAUQBMAFMARQBSAFYARQBSADsAIABJAG4AaQB0AGkAYQBsACAAQwBh
 AHQAYQBsAG8AZwA9AHQAZQBzAHQAZABiADsAIABVAHMAZQByACAASQBEAD0AcwBhADsAIABQAGEA
-cwBzAHcAbwByAGQAPQBzAGEAAC9NAGUAZABoAG8AawAuAEwAbwBhAGQAQgBhAGQARgBpAGwAZQBO
-AGEAbQBlAHMAAClAAEYAaQBsAGUAXwBOAGEAbQBlAF8ARQB4AGMAZQBwAHQAaQBvAG4AAAAAn9Qa
-dU2Q9UegK8upW15LqgAIt3pcVhk04IkIiYRdzYCAzJEDBhIVAwYSGQMgAAEEAAASFQQAABIZBQAB
-ARIZBAgAEhUECAASGQMGEgwEAAASDAQIABIMBCAAEh0FIAECEh0CBggDBhEUBAAAAAAEAQAAAAQg
-AQEOBCABAQgGAAESVRFZBCAAEl0GIAIBDhJdBAcBEhUFIAEBEWUIAQACAAAAAAADAAABBCAAEnEE
-IAASdQUgARJ5HAMgABwFFRJ9AQ4DIAAICSAAFRGAgQETAAYVEYCBAQ4EIAATAAUgABKAhQcgARKA
-iR0cAyAAAhIHBRUSfQEOEh0OFRGAgQEOHRwFIAASgJEIIAISgJkOElUEBwESHQcgAgEOEoCdBiAB
-ARGArQUgABKAsQcgAhKAtQ4cBiABARGAuQ0HBQ4SgJ0CEoClEoC1RwEAGi5ORVRGcmFtZXdvcmss
-VmVyc2lvbj12NC4wAQBUDhRGcmFtZXdvcmtEaXNwbGF5TmFtZRAuTkVUIEZyYW1ld29yayA0KAEA
-I1NUXzc2OGNiMmViYzY2MjQ5ZjY5ZmZiZWFkNjQ1OTA1YTkzAAAFAQAAAAAWAQARQ29weXJpZ2h0
-IEAgIDIwMTYAAAgBAAgAAAAAAB4BAAEAVAIWV3JhcE5vbkV4Y2VwdGlvblRocm93cwEAAACEMwAA
-AAAAAAAAAACeMwAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkDMAAAAAAAAAAAAAAABfQ29yRGxs
-TWFpbgBtc2NvcmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+cwBzAHcAbwByAGQAPQBzAGEAOwAgAEMAbwBuAG4AZQBjAHQAaQBvAG4AIABUAGkAbQBlAG8AdQB0
+AD0ANgAwAAAvTQBlAGQAaABvAGsALgBMAG8AYQBkAEIAYQBkAEYAaQBsAGUATgBhAG0AZQBzAAAp
+QABGAGkAbABlAF8ATgBhAG0AZQBfAEUAeABjAGUAcAB0AGkAbwBuAAD49S66VzObSYmP159QGRaj
+AAi3elxWGTTgiQiJhF3NgIDMkQMGEhUDBhIZAyAAAQQAABIVBAAAEhkFAAEBEhkECAASFQQIABIZ
+AwYSDAQAABIMBAgAEgwEIAASHQUgAQISHQIGCAMGERQEAAAAAAQBAAAABCABAQ4EIAEBCAYAARJV
+EVkEIAASXQYgAgEOEl0EBwESFQUgAQERZQgBAAIAAAAAAAMAAAEEIAAScQQgABJ1BSABEnkcAyAA
+HAUVEn0BDgMgAAgJIAAVEYCBARMABhURgIEBDgQgABMABSAAEoCFByABEoCJHRwDIAACEgcFFRJ9
+AQ4SHQ4VEYCBAQ4dHAUgABKAkQggAhKAmQ4SVQQHARIdByACAQ4SgJ0GIAEBEYCtBSAAEoCxByAC
+EoC1DhwGIAEBEYC5DQcFDhKAnQISgKUSgLVHAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjAB
+AFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEC5ORVQgRnJhbWV3b3JrIDQoAQAjU1RfNzY4Y2IyZWJj
+NjYyNDlmNjlmZmJlYWQ2NDU5MDVhOTMAAAUBAAAAABYBABFDb3B5cmlnaHQgQCAgMjAxNgAACAEA
+CAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQAAALAzAAAAAAAAAAAAAM4zAAAA
+IAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAMwAAAAAAAAAAAAAAAAAAAABfQ29yRGxsTWFpbgBtc2Nv
+cmVlLmRsbAAAAAAA/yUAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
 SAAAAFhAAACwAwAAAAAAAAAAAACwAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEACkwkFwAAAQAKTCQXPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
+AAAAvQTv/gAAAQAAAAEA6GgmFwAAAQDoaCYXPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
 AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
 AAAAAAAAALAEEAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAA7AIAAAEAMAAwADAA
 MAAwADQAYgAwAAAAcAAkAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAFMAVABf
 ADcANgA4AGMAYgAyAGUAYgBjADYANgAyADQAOQBmADYAOQBmAGYAYgBlAGEAZAA2ADQANQA5ADAA
-NQBhADkAMwAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA1ADkAMgA0
-AC4AMQA5ADQANgA2AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADcA
+NQBhADkAMwAAAEAADwABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgA1ADkAMgA2
+AC4AMgA2ADgANQA2AAAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAVABfADcA
 NgA4AGMAYgAyAGUAYgBjADYANgAyADQAOQBmADYAOQBmAGYAYgBlAGEAZAA2ADQANQA5ADAANQBh
 ADkAMwAuAGQAbABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAA
 eQByAGkAZwBoAHQAIABAACAAIAAyADAAMQA2AAAAeAAoAAEATwByAGkAZwBpAG4AYQBsAEYAaQBs
@@ -5971,8 +5971,8 @@ AGUAbgBhAG0AZQAAAFMAVABfADcANgA4AGMAYgAyAGUAYgBjADYANgAyADQAOQBmADYAOQBmAGYA
 YgBlAGEAZAA2ADQANQA5ADAANQBhADkAMwAuAGQAbABsAAAAaAAkAAEAUAByAG8AZAB1AGMAdABO
 AGEAbQBlAAAAAABTAFQAXwA3ADYAOABjAGIAMgBlAGIAYwA2ADYAMgA0ADkAZgA2ADkAZgBmAGIA
 ZQBhAGQANgA0ADUAOQAwADUAYQA5ADMAAABEAA8AAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBv
-AG4AAAAxAC4AMAAuADUAOQAyADQALgAxADkANAA2ADYAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
-eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADUAOQAyADQALgAxADkANAA2ADYAAAAAAAAAAAAA
+AG4AAAAxAC4AMAAuADUAOQAyADYALgAyADYAOAA1ADYAAAAAAEgADwABAEEAcwBzAGUAbQBiAGwA
+eQAgAFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADUAOQAyADYALgAyADYAOAA1ADYAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -5981,7 +5981,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAsDMAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAA4DMAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6301,7 +6301,7 @@ namespace ST_0d2699ba850e4e779dd14b8e0c5ef80d
 
         private bool ExecuteStoredProcedure(DataTable table, string dest)
         {
-            string conn_string = "Data Source=MSSQLSERVER; Initial Catalog=testdb; User ID=sa; Password=sa";
+            string conn_string = "Data Source=MSSQLSERVER; Initial Catalog=testdb; User ID=sa; Password=sa; Connection Timeout=60";
             SqlConnection connection = new SqlConnection(conn_string);
             bool result = true;
 
@@ -6348,15 +6348,15 @@ namespace ST_0d2699ba850e4e779dd14b8e0c5ef80d
                 Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
 <c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
 	<msb:PropertyGroup>
-		<msb:CodeName>ST_0d2699ba850e4e779dd14b8e0c5ef80d</msb:CodeName>
 		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>ST_0d2699ba850e4e779dd14b8e0c5ef80d</msb:CodeName>
 		<msb:DisplayName>ST_0d2699ba850e4e779dd14b8e0c5ef80d</msb:DisplayName>
 		<msb:ProjectId>{DEEB39DE-10ED-429F-9993-87028CB679FF}</msb:ProjectId>
 	</msb:PropertyGroup>
 	<msb:ItemGroup>
 		<msb:Project Include="ST_0d2699ba850e4e779dd14b8e0c5ef80d.csproj"/>
-		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
 		<msb:File Include="Properties\Resources.resx"/>
 		<msb:File Include="Properties\Resources.Designer.cs"/>
 		<msb:File Include="Properties\Settings.Designer.cs"/>
@@ -6549,14 +6549,14 @@ namespace ST_0d2699ba850e4e779dd14b8e0c5ef80d.Properties {
               <BinaryItem
                 Name="ST_0d2699ba850e4e779dd14b8e0c5ef80d.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDAGFJ8FYAAAAAAAAAAOAAAiELAQsAABYAAAAIAAAAAAAADjUA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAFLm8lYAAAAAAAAAAOAAAiELAQsAABYAAAAIAAAAAAAAPjUA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALg0AABTAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAOg0AABTAAAAAEAAAAgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAFBUAAAAgAAAAFgAAAAIA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAARBUAAAAgAAAAFgAAAAIA
 AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAAgEAAAAQAAAAAYAAAAYAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAHgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADw
-NAAAAAAAAEgAAAACAAUAUCMAAGgRAAABAAAAAAAAAJgiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAHgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAAg
+NQAAAAAAAEgAAAACAAUAUCMAAJgRAAABAAAAAAAAAJgiAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKA4AAAoqEzACAC0AAAABAAARfgEAAAQtIHIBAABw0AIA
 AAIoDwAACm8QAAAKcxEAAAoKBoABAAAEfgEAAAQqGn4CAAAEKh4CgAIAAAQqGn4DAAAEKi5zBgAA
 BoADAAAEKh4CKBQAAAoqABswBADXAAAAAgAAEQIoCQAABgoCKBYAAApvFwAACnJzAABwbxgAAApv
@@ -6565,14 +6565,14 @@ bxwAAAoqB28dAAAKEwQrNBIEKB4AAAoNBm8fAAAKGI0BAAABEwURBRYSAyggAAAKohEFFxIDKCEA
 AAqiEQVvIgAACiYSBCgjAAAKLcPeDhIE/hYCAAAbbyQAAArcAgYIKAoAAAYsDQIoFgAAChZvHAAA
 CioCKBYAAAoXbxwAAAoqAAEQAAACAGQAQaUADgAAAAATMAMAPgAAAAMAABFzJQAACgoGbyYAAApy
 2QAAcNAmAAABKA8AAApvJwAACiYGbyYAAApy+wAAcNAmAAABKA8AAApvJwAACiYGKgAAGzADAHYA
-AAAEAAARchMBAHAKBnMoAAAKCxcMB28pAAAKcqYBAHAHcyoAAAoNCRpvKwAACglvLAAACnLYAQBw
-A28tAAAKEwQRBB8eby4AAAoJbywAAApy9gEAcARvLQAAChMFEQUfFm8uAAAKCW8vAAAKJgdvMAAA
+AAAEAAARchMBAHAKBnMoAAAKCxcMB28pAAAKctQBAHAHcyoAAAoNCRpvKwAACglvLAAACnIGAgBw
+A28tAAAKEwQRBB8eby4AAAoJbywAAApyJAIAcARvLQAAChMFEQUfFm8uAAAKCW8vAAAKJgdvMAAA
 Ct4FJhYM3gAIKgAAARAAAAAADwBgbwAFMAAAAR4CKDEAAAoqtAAAAM7K774BAAAAkQAAAGxTeXN0
 ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBD
 dWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJl
 c291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAEJTSkIBAAEA
 AAAAAAwAAAB2NC4wLjMwMzE5AAAAAAUAbAAAAPgEAAAjfgAAZAUAAMgHAAAjU3RyaW5ncwAAAAAs
-DQAAEAIAACNVUwA8DwAAEAAAACNHVUlEAAAATA8AABwCAAAjQmxvYgAAAAAAAAACAAABVx2iCQkD
+DQAAQAIAACNVUwBsDwAAEAAAACNHVUlEAAAAfA8AABwCAAAjQmxvYgAAAAAAAAACAAABVx2iCQkD
 AAAA+iUzABYAAAEAAAAwAAAABQAAAAYAAAALAAAAAwAAADEAAAACAAAADwAAAAQAAAACAAAAAwAA
 AAQAAAADAAAAAQAAAAUAAAABAAAAAQAAAAAACgABAAAAAAAGAMEAugAKAN0AyAAOAD0BFAEGAFkB
 ugAGAG8BXgEGAKABiwESACsCHwIGAJsCgQIGAMYCtAIGAN0CtAIGAPoCtAIGABkDtAIGADIDtAIG
@@ -6592,7 +6592,7 @@ ABEBPgb0ABQAQgb8ACEBVwYbADkAvAEbADkAdAYcASkBPgYiAUEBvAFkAEkB1gYbAFEBvAEwAVkB
 /AY4AVEBIwc/AWkBPwdFAXEBVgdNAVkBZAe4AEkBdAcbABkAvAEbAAgAFABaAAgAGABfACkAkwCM
 AC4AGwDWAS4AIwDWAS4AYwD8AS4ACwBlAS4AEwCtAS4AMwCtAS4AKwDWAS4AOwDcAS4AQwDWAS4A
 WwDzAUMAawBfAEkAkwCMAGEAmwBfAIMAqwBfAIEAAAErAVQBAgABAAMAAwAAAG8BLwAAAO4BNAAA
-ABICQgACAAIAAwACAAMABQABAAQABQACAAUABwCtAMgA4gAEgAAAAQAAACQX0GsAAAAAAAB/AAAA
+ABICQgACAAIAAwACAAMABQABAAQABQACAAUABwCtAMgA4gAEgAAAAQAAACYXyWgAAAAAAAB/AAAA
 BAAAAAAAAAAAAAAAAQCxAAAAAAAEAAAAAAAAAAAAAAABALoAAAAAAAsAAAAAAAAAAAAAAAoA9QAA
 AAAABAAAAAAAAAAAAAAAAQAfAgAAAAALAAAAAAAAAAAAAAAKACIFAAAAAAAAAAABAAAAhAcAAAUA
 BAAAAAA8TW9kdWxlPgBTVF8wZDI2OTliYTg1MGU0ZTc3OWRkMTRiOGUwYzVlZjgwZC5kbGwAUmVz
@@ -6634,36 +6634,36 @@ AABxUwBUAF8AMABkADIANgA5ADkAYgBhADgANQAwAGUANABlADcANwA5AGQAZAAxADQAYgA4AGUA
 MABjADUAZQBmADgAMABkAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBz
 AAApVQBzAGUAcgA6ADoAZwBvAG8AZABfAGkAYwBwAF8AZgBpAGwAZQBzAAA7VQBzAGUAcgA6ADoA
 aQBjAHAAXwBsAGUAdAB0AGUAcgBzAF8AZABlAHMAdABpAG4AYQB0AGkAbwBuAAAhUAByAGUAdgBp
-AG8AdQBzAEYAaQBsAGUATgBhAG0AZQAAF04AZQB3AEYAaQBsAGUATgBhAG0AZQAAgJFEAGEAdABh
+AG8AdQBzAEYAaQBsAGUATgBhAG0AZQAAF04AZQB3AEYAaQBsAGUATgBhAG0AZQAAgL9EAGEAdABh
 ACAAUwBvAHUAcgBjAGUAPQBNAFMAUwBRAEwAUwBFAFIAVgBFAFIAOwAgAEkAbgBpAHQAaQBhAGwA
 IABDAGEAdABhAGwAbwBnAD0AdABlAHMAdABkAGIAOwAgAFUAcwBlAHIAIABJAEQAPQBzAGEAOwAg
-AFAAYQBzAHMAdwBvAHIAZAA9AHMAYQAAMU0AZQBkAGgAbwBrAC4ATABvAGEAZABOAGUAdwBGAGkA
-bABlAEMAbwBwAGkAZQBzAAAdQABOAGUAdwBfAEYAaQBsAGUAXwBjAG8AcAB5AAAZQABkAGUAcwB0
-AGkAbgBhAHQAaQBvAG4AADG9P9chp3NIoHJfH3hcFZUACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMG
-EhkDIAABBAAAEhUEAAASGQUAAQESGQQIABIVBAgAEhkDBhIMBAAAEgwECAASDAQgABIdBiACAhId
-DgIGCAMGERQEAAAAAAQBAAAABCABAQ4EIAEBCAYAARJVEVkEIAASXQYgAgEOEl0EBwESFQUgAQER
-ZQgBAAIAAAAAAAMAAAEEIAAScQQgABJ1BSABEnkcAyAAHAYVEn0CDg4DIAAOAyAACAsgABURgIEC
-EwATAQcVEYCBAg4OCyAAFRGAhQITABMBBSAAEoCJBxURgIUCDg4EIAATAAQgABMBByABEoCNHRwD
-IAACGwcGEh0VEn0CDg4OFRGAhQIODhURgIECDg4dHAUgABKAlQggAhKAnQ4SVQQHARIdByACAQ4S
-gKEGIAEBEYCxBSAAEoC1ByACEoC5DhwGIAEBEYC9EAcGDhKAoQISgKkSgLkSgLlHAQAaLk5FVEZy
-YW1ld29yayxWZXJzaW9uPXY0LjABAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEC5ORVQgRnJhbWV3
-b3JrIDQoAQAjU1RfMGQyNjk5YmE4NTBlNGU3NzlkZDE0YjhlMGM1ZWY4MGQAAAUBAAAAABYBABFD
-b3B5cmlnaHQgQCAgMjAxNgAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dz
-AQDgNAAAAAAAAAAAAAD+NAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8DQAAAAAAAAAAAAAAAAA
-AAAAX0NvckRsbE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AFAAYQBzAHMAdwBvAHIAZAA9AHMAYQA7ACAAQwBvAG4AbgBlAGMAdABpAG8AbgAgAFQAaQBtAGUA
+bwB1AHQAPQA2ADAAADFNAGUAZABoAG8AawAuAEwAbwBhAGQATgBlAHcARgBpAGwAZQBDAG8AcABp
+AGUAcwAAHUAATgBlAHcAXwBGAGkAbABlAF8AYwBvAHAAeQAAGUAAZABlAHMAdABpAG4AYQB0AGkA
+bwBuAAAAAFLcTpTrh6pPk+xZ3moPhdcACLd6XFYZNOCJCImEXc2AgMyRAwYSFQMGEhkDIAABBAAA
+EhUEAAASGQUAAQESGQQIABIVBAgAEhkDBhIMBAAAEgwECAASDAQgABIdBiACAhIdDgIGCAMGERQE
+AAAAAAQBAAAABCABAQ4EIAEBCAYAARJVEVkEIAASXQYgAgEOEl0EBwESFQUgAQERZQgBAAIAAAAA
+AAMAAAEEIAAScQQgABJ1BSABEnkcAyAAHAYVEn0CDg4DIAAOAyAACAsgABURgIECEwATAQcVEYCB
+Ag4OCyAAFRGAhQITABMBBSAAEoCJBxURgIUCDg4EIAATAAQgABMBByABEoCNHRwDIAACGwcGEh0V
+En0CDg4OFRGAhQIODhURgIECDg4dHAUgABKAlQggAhKAnQ4SVQQHARIdByACAQ4SgKEGIAEBEYCx
+BSAAEoC1ByACEoC5DhwGIAEBEYC9EAcGDhKAoQISgKkSgLkSgLlHAQAaLk5FVEZyYW1ld29yayxW
+ZXJzaW9uPXY0LjABAFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEC5ORVQgRnJhbWV3b3JrIDQoAQAj
+U1RfMGQyNjk5YmE4NTBlNGU3NzlkZDE0YjhlMGM1ZWY4MGQAAAUBAAAAABYBABFDb3B5cmlnaHQg
+QCAgMjAxNgAACAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhyb3dzAQAQNQAAAAAA
+AAAAAAAuNQAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDUAAAAAAAAAAAAAAAAAAAAAX0NvckRs
+bE1haW4AbXNjb3JlZS5kbGwAAAAAAP8lACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAABABAAAAAYAACAAAAAAAAAAAAAAAAAAAABAAEAAAAwAACAAAAAAAAAAAAAAAAAAAABAAAAAABI
 AAAAWEAAALADAAAAAAAAAAAAALADNAAAAFYAUwBfAFYARQBSAFMASQBPAE4AXwBJAE4ARgBPAAAA
-AAC9BO/+AAABAAAAAQDQayQXAAABANBrJBc/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
+AAC9BO/+AAABAAAAAQDJaCYXAAABAMloJhc/AAAAAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAARAAA
 AAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4A
 AAAAAAAAsAQQAwAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAADsAgAAAQAwADAAMAAw
 ADAANABiADAAAABwACQAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUwBUAF8A
 MABkADIANgA5ADkAYgBhADgANQAwAGUANABlADcANwA5AGQAZAAxADQAYgA4AGUAMABjADUAZQBm
-ADgAMABkAAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADUAOQAyADQA
-LgAyADcANgAwADAAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8AMABk
+ADgAMABkAAAAQAAPAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAuADUAOQAyADYA
+LgAyADYAOAAyADUAAAAAAHAAKAABAEkAbgB0AGUAcgBuAGEAbABOAGEAbQBlAAAAUwBUAF8AMABk
 ADIANgA5ADkAYgBhADgANQAwAGUANABlADcANwA5AGQAZAAxADQAYgA4AGUAMABjADUAZQBmADgA
 MABkAC4AZABsAGwAAABIABIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQAAABDAG8AcAB5
 AHIAaQBnAGgAdAAgAEAAIAAgADIAMAAxADYAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwA
@@ -6671,8 +6671,8 @@ ZQBuAGEAbQBlAAAAUwBUAF8AMABkADIANgA5ADkAYgBhADgANQAwAGUANABlADcANwA5AGQAZAAx
 ADQAYgA4AGUAMABjADUAZQBmADgAMABkAC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4A
 YQBtAGUAAAAAAFMAVABfADAAZAAyADYAOQA5AGIAYQA4ADUAMABlADQAZQA3ADcAOQBkAGQAMQA0
 AGIAOABlADAAYwA1AGUAZgA4ADAAZAAAAEQADwABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8A
-bgAAADEALgAwAC4ANQA5ADIANAAuADIANwA2ADAAMAAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5
-ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANQA5ADIANAAuADIANwA2ADAAMAAAAAAAAAAAAAAA
+bgAAADEALgAwAC4ANQA5ADIANgAuADIANgA4ADIANQAAAAAASAAPAAEAQQBzAHMAZQBtAGIAbAB5
+ACAAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4ANQA5ADIANgAuADIANgA4ADIANQAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6681,7 +6681,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAAAQNQAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAwAAABANQAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -6828,6 +6828,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
               Language="CSharp"
               ReadOnlyVariables="User::last_batch_execution_successful">
               <ProjectItem
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_ef037507a7b34a4990062b7be3fbcba2")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_ef037507a7b34a4990062b7be3fbcba2")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+              <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <root>
@@ -6946,35 +6976,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_ef037507a7b34a4990062b7be3fbcba2.Properties.Settings.get_Default():ST_ef037507a7b34a4990062b7be3fbcba2.Properties.Sett" +
-    "ings")]
-
-namespace ST_ef037507a7b34a4990062b7be3fbcba2.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ST_ef037507a7b34a4990062b7be3fbcba2.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -7201,35 +7202,34 @@ namespace ST_ef037507a7b34a4990062b7be3fbcba2
 	</msb:ItemGroup>
 </c:Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_ef037507a7b34a4990062b7be3fbcba2")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_ef037507a7b34a4990062b7be3fbcba2")]
-[assembly: AssemblyCopyright("Copyright @  2016")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_ef037507a7b34a4990062b7be3fbcba2.Properties.Settings.get_Default():ST_ef037507a7b34a4990062b7be3fbcba2.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_ef037507a7b34a4990062b7be3fbcba2.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Settings.settings"
                 Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
