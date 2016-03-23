@@ -10,3 +10,7 @@ CREATE TABLE Medhok.Batch_Process
 	EndedAt DATETIME2 NULL
 );
 GO
+
+--to initialize the batch register
+INSERT INTO Medhok.Batch_Process (ExecutionLogId, Name, Successful)
+VALUES(0,'[Table Initializer]', 1);
